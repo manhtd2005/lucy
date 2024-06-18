@@ -11,6 +11,16 @@ body {
     font-family: "Poppins", sans-serif
 }
 
+/* Common */
+:root {
+    --background-FFFAF5: #FFFAF5;
+    --background-FFF6ED: #FFF6ED;
+}
+
+a {
+    text-decoration: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Sora", sans-serif;
 }
@@ -18,4 +28,61 @@ h1,h2,h3,h4,h5,h6 {
 input, textarea, select, button {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container {
+    width: 1220px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    
+
+}
+/* Header */
+.header {
+    padding: 26px 0 77px;
+    background: var(--background-FFFAF5);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    padding: 8px 18px;
+    color: #5E6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navbar__item:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.action__btn {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #000958;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 99px;
+    border: 1px solid #000950;
+    cursor: pointer;
+}
+
+.action__btn:hover{
+    background: #bebfdf;
 }
