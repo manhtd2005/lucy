@@ -8,13 +8,18 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins", sans-serif
+    font-family: "Poppins", sans-serif;
+    background: var(--background-FFFAF5);
 }
 
 /* Common */
 :root {
     --background-FFFAF5: #FFFAF5;
     --background-FFF6ED: #FFF6ED;
+    --color-000958: #000958;
+    --color-656689: #656689;
+    --color-bg__btn-FF5B2E: #FF5B2E;
+    --color-FFF: #fff;
 }
 
 a {
@@ -36,13 +41,47 @@ input, textarea, select, button {
     margin: 0 auto;
 }
 
-.btn {
-    
-
+.section__heading {
+    color: var(--color-000958);
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
+
+.section__desc {
+    color: var(--color-656689);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 31px;
+    background: var(--color-bg__btn-FF5B2E);
+    color: var(--color-FFF);
+    border: 1px solid var(--color-bg__btn-FF5B2E);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.btn-primary:hover {
+    transition: .25s;
+    color: var(--color-bg__btn-FF5B2E);
+    border-radius: 31px;
+    border: 1px solid var(--color-bg__btn-FF5B2E);
+    background: #FFF6ED;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
 /* Header */
 .header {
-    padding: 26px 0 77px;
+    padding: 26px 0 14px;
     background: var(--background-FFFAF5);
 }
 
@@ -85,4 +124,168 @@ input, textarea, select, button {
 
 .action__btn:hover{
     background: #bebfdf;
+}
+
+/* Hero */
+.hero {
+    padding: 86px 0 77px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero__media {
+    padding-bottom: 90px;
+    position: relative;
+    display: flex;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #FE997B;
+    border: 3px solid #FFF;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor--left {
+    bottom: 10px;
+    left: -58px;
+}
+
+.hero__decor--right {
+    right: -43px;
+    top: 16px;
+}
+
+.hero__img-wrap--small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    background: #FAA7AD;
+    margin: 0 0 -58px -24px;
+    border: 2px solid #f7dddf;
+}
+
+.hero__list {
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    padding: 18px 14px;
+    background: #fff;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__list-item {
+    display: flex;
+    align-items: center;
+}
+
+.hero__list-item--img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;    
+    background: #FEC23F;
+    object-fit: cover;
+}
+
+.hero__list-item--img2 {
+    background: #6597C2;
+}
+
+.hero__list-title {
+    margin-left: 10px;
+}
+
+.hero__list-heading {
+    color: #181E52;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__list-skeleton {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero__list-skeleton--small {
+    width: 39px;
+}
+
+.hero__line {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: #F2F2F2;
+    border-radius: 99px;
+}
+
+.hero__heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero__desc {
+    max-width: 390px;
+    margin: 24px 0 38px;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-FFF);
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+}
+
+.hero__call {
+    color: var(--color-000958);
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration-line: underline;
 }
